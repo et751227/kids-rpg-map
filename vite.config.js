@@ -8,7 +8,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        //practice: resolve(__dirname, 'public/PracticeMode.html'),
+        PracticeMode: resolve(__dirname, 'public/PracticeMode.html'), // 練習模式
         //challenge: resolve(__dirname, 'public/challenge.html'),
         //records: resolve(__dirname, 'public/records.html'),
       },
