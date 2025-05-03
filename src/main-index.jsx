@@ -1,21 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css'; // 如果有使用 Tailwind 的話
+import './index.css';
 
 const App = () => {
-  return (
-    <div className="relative w-full h-screen overflow-hidden">
-      {/* 標題改為浮在上面，帶透明背景 */}
-      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-white/70 px-4 py-2 rounded shadow text-xl font-semibold z-10">
-        歡迎來到 RPG 世界地圖
-      </div>
+  const goToPractice = () => {
+    window.location.href = '/PracticeMode.html';
+  };
 
-      {/* 地圖圖片全螢幕鋪滿 */}
-      <img
-        src="/map.png"
-        alt="World Map"
-        className="w-full h-full object-cover"
-      />
+  return (
+    <div className="text-center bg-white">
+      <h1 className="text-2xl font-bold my-4">歡迎來到 RPG 世界地圖</h1>
+      <div className="relative inline-block">
+        <img src="/map.png" alt="World Map" className="rounded-lg shadow-md max-w-full" />
+        
+        {/* 點擊村莊區域 */}
+        <button
+          onClick={goToPractice}
+          className="absolute left-[12%] top-[60%] w-[15%] h-[15%] bg-transparent border-none"
+          aria-label="Go to Practice Mode"
+        />
+      </div>
     </div>
   );
 };
