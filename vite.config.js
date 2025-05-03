@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'public/index.html'),
+        main: resolve(__dirname, 'index.html'),
         //practice: resolve(__dirname, 'public/PracticeMode.html'),
         //challenge: resolve(__dirname, 'public/challenge.html'),
         //records: resolve(__dirname, 'public/records.html'),
