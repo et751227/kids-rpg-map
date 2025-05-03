@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.css'; // 如果有使用 Tailwind 的話
 
 const App = () => {
   return (
-    <div style={{ textAlign: 'center', backgroundColor: '#fff' }}>
-      <h1 style={{ fontSize: '2rem', margin: '20px' }}>歡迎來到 RPG 世界地圖</h1>
+    <div className="relative w-full h-screen overflow-hidden">
+      {/* 標題改為浮在上面，帶透明背景 */}
+      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-white/70 px-4 py-2 rounded shadow text-xl font-semibold z-10">
+        歡迎來到 RPG 世界地圖
+      </div>
+
+      {/* 地圖圖片全螢幕鋪滿 */}
       <img
         src="/map.png"
         alt="World Map"
-        style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 0 12px rgba(0,0,0,0.2)' }}
+        className="w-full h-full object-cover"
       />
     </div>
   );
