@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/PracticeMode", "destination": "/PracticeMode.html" }
+  ]
+}
