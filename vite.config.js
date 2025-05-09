@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        'main-practice': resolve(__dirname, 'src/main-practice.jsx')  // ✅ JS 直接當 entry
+        practice: resolve(__dirname, 'src/pages/PracticeMode.html') // ✅ 放入 src 才能參與打包
       }
     }
   }
