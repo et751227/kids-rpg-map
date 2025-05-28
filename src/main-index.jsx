@@ -4,7 +4,7 @@ import './index.css';
 
 const App = () => {
   const handleClickVillage = () => {
-    window.location.href = '/PracticeMode.html'; // ✅ 正確加上 .html
+    window.location.href = './PracticeMode.html'; // ✅ 正確加上 .html
   };
 
   return (
